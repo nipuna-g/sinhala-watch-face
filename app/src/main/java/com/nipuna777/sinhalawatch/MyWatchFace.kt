@@ -238,9 +238,9 @@ class MyWatchFace : CanvasWatchFaceService() {
         }
 
         private fun getMinuteStringForDecimal(startString: String, minutes: Int): String {
-            var minutes = minutes % 10
+            val minutesModulus: Int = minutes % 10
 
-            var min = when (minutes) {
+            val min = when (minutesModulus) {
                 1 -> "එකයි "
                 2 -> "දෙකයි "
                 3 -> "තුනයි "
@@ -253,7 +253,7 @@ class MyWatchFace : CanvasWatchFaceService() {
                 else -> "-"
             }
 
-            return startString + min;
+            return startString + min
         }
 
         override fun onVisibilityChanged(visible: Boolean) {
