@@ -227,11 +227,11 @@ class MyWatchFace : CanvasWatchFaceService() {
                 19 -> "දහනයවයි "
                 20 -> "විස්සයි "
                 in 21..29 -> getMinuteStringForDecimal("විසි", min)
-                30 -> "තිස්"
+                30 -> "තිහයි "
                 in 31..39 -> getMinuteStringForDecimal("තිස්", min)
-                40 -> "හතලිස්"
+                40 -> "හතලියයි "
                 in 41..49 -> getMinuteStringForDecimal("හතලිස්", min)
-                50 -> "පනස්"
+                50 -> "පනහයි "
                 in 51..59 -> getMinuteStringForDecimal("පනස්", min)
                 else -> "-"
             }
