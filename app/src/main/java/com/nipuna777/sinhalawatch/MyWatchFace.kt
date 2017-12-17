@@ -104,6 +104,7 @@ class MyWatchFace : CanvasWatchFaceService() {
             super.onCreate(holder)
 
             setWatchFaceStyle(WatchFaceStyle.Builder(this@MyWatchFace)
+                    .setCardPeekMode(WatchFaceStyle.PEEK_MODE_SHORT)
                     .build())
 
             mCalendar = Calendar.getInstance()
@@ -200,7 +201,7 @@ class MyWatchFace : CanvasWatchFaceService() {
                 10, 22 -> "දහයයි "
                 11, 23 -> "එකෝලොහයි "
                 12, 0 -> "දොළහයි "
-                else -> "-"
+                else -> "෴"
             }
         }
 
